@@ -1,0 +1,33 @@
+.main-wrapper {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.logo {
+    width: 27em;
+}
+
+.router-wrapper {
+    width: 50em;
+}
+
+@media (width < 1300px) {
+    
+    .main-wrapper {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .logo {
+        width: 20em;
+    }
+
+    .router-wrapper {
+        width: 80%;
+    }
+
+}

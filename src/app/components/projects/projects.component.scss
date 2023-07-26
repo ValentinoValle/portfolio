@@ -1,0 +1,124 @@
+.projects-wrapper {
+    padding: 1em 3em 2em 3em;
+    position: relative;
+    width: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 4em;
+        width: 4em;
+        top: 0;
+        left: 0;
+        border-top: 5px solid var(--primary-white);
+        border-left: 5px solid var(--primary-white);
+        border-radius: .25em;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 4em;
+        width: 4em;
+        bottom: 0;
+        right: 0;
+        border-bottom: 5px solid var(--primary-white);
+        border-right: 5px solid var(--primary-white);
+        border-radius: .25em;
+    }
+}
+
+.projects-tittle {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    transition: all .2s;
+}
+
+.project {
+    border: 1px solid var(--primary-white);
+    padding: .5em 1em;
+    transition: all .2s ease;
+
+    .name-wrapper {
+        display: flex;
+        align-items: center;
+
+        .project-name {
+            font-size: 1.75rem;
+            font-weight: 400;
+        }
+        
+        .chev-svg {
+            height: 34px;
+            width: 34px;
+            margin-left: auto;
+
+            & > #svg-path {
+                stroke: var(--primary-white);
+                transform-box: fill-box;
+                transform-origin: center;
+                transition: all .2s ease;
+            }
+        }
+    }
+
+    .description {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: all .2s ease;
+
+        & > .desc-text {
+            position: relative;
+            overflow: hidden;
+        }
+
+        & > .desc-text::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: var(--primary-purple);
+            transition: background-color .2s;
+        }
+    }    
+
+    
+
+    /* Hover effects */
+
+    &:hover {
+        color: var(--primary-purple);
+        background-color: var(--primary-white);
+        transition: all .2s ease;
+
+        .description {
+            grid-template-rows: 1fr;
+            transition: grid-template-rows .2s ease;
+        
+            & > .desc-text::before {
+                background-color: var(--primary-white);
+                animation: slide 1s forwards;
+            }
+        }
+
+        .name-wrapper {
+            .chev-svg > #svg-path {
+                stroke: var(--primary-purple);
+                transform: rotate(180deg);
+                transition: all .2s ease;
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    to {
+        left: 100%;
+    }
+}

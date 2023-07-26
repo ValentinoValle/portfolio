@@ -1,0 +1,136 @@
+
+#rec-one {
+    transform: scale(0%);
+    transition: transform .2s; 
+    transform-origin: 8% 50%;
+}
+#rec-two {
+    transform: scale(0%);
+    transition: transform .2s;
+    transform-origin: 20% 20%;
+    transition-delay: .05s;
+}
+#rec-three {
+    transform: scale(0%);
+    transition: transform .2s;
+    transform-origin: 50% 8%;
+    transition-delay: .1s;
+}
+#rec-four {
+    transform: scale(0%);
+    transition: transform .2s;
+    transform-origin: 80% 20%;
+    transition-delay: .15s;
+}
+#rec-five {
+    transform: scale(0%);
+    transition: transform .2s;
+    transform-origin: 92% 50%;
+    transition-delay: .2s;
+}
+#rec-six {
+    transform: scale(0%);
+    transition: transform .2s;
+    transform-origin: 80% 80%;
+    transition-delay: .25s;
+}
+#rec-seven {
+    transform: scale(0%);
+    transition: transform .2s;
+    transform-origin: 50% 92%;
+    transition-delay: .3s;
+}
+#rec-eight {
+    transform: scale(0%);
+    transition: transform .2s;
+    transform-origin: 20% 80%;
+    transition-delay: .35s;
+}
+
+#v-logo {
+    stroke: #fff;
+    fill: #1E123C;
+    transition: all .2s;
+
+}
+
+#rectangle {
+    stroke: #fff;
+    fill: #1E123C;
+    transition: all .2s;
+}
+
+.rect {
+    fill: #fff;
+    shape-rendering: crispEdges;
+}
+
+.svg {
+    overflow: hidden;
+   
+    height: 400px;
+    width: 400px;
+}
+
+.svg:hover {
+    #rec-one {
+        transform: scale(100%);
+        transition: transform .2s cubic-bezier(0,.94,.21,1.49);
+        transform-origin: 8% 50%;
+    }
+    #rec-two {
+        transform: scale(100%);
+        transition: transform .2s cubic-bezier(0,.94,.21,1.49);
+        transform-origin: 20% 20%;
+        transition-delay: .05s;
+    }
+    #rec-three {
+        transform: scale(100%);
+        transition: transform .2s cubic-bezier(0,.94,.21,1.49);
+        transform-origin: 50% 8%;
+        transition-delay: .1s;
+    }
+    #rec-four {
+        transform: scale(100%);
+        transition: transform .2s cubic-bezier(0,.94,.21,1.49);
+        transform-origin: 80% 20%;
+        transition-delay: .15s;
+    }
+    #rec-five {
+        transform: scale(100%);
+        transition: transform .2s cubic-bezier(0,.94,.21,1.49);
+        transform-origin: 92% 50%;
+        transition-delay: .2s;
+    }
+    #rec-six {
+        transform: scale(100%);
+        transition: transform .2s cubic-bezier(0,.94,.21,1.49);
+        transform-origin: 80% 80%;
+        transition-delay: .25s;
+    }
+    #rec-seven {
+        transform: scale(100%);
+        transition: transform .2s cubic-bezier(0,.94,.21,1.49);
+        transform-origin: 50% 92%;
+        transition-delay: .3s;
+    }
+    #rec-eight {
+        transform: scale(100%);
+        transition: transform .2s cubic-bezier(0,.94,.21,1.49);
+        transform-origin: 20% 80%;
+        transition-delay: .35s;
+    }
+
+    #v-logo {
+        fill: #fff;
+        stroke: #1E123C;
+        transition: all .2s;
+    }
+
+    #rectangle {
+        fill: #fff;
+        stroke: #1E123C;
+        stroke-width: 0;
+        transition: all .2s;
+    }
+}

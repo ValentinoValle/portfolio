@@ -1,0 +1,98 @@
+
+.home-wrapper {
+    padding: 1em 3em 2em 3em;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 4em;
+        width: 4em;
+        top: 0;
+        left: 0;
+        border-top: 5px solid var(--primary-white);
+        border-left: 5px solid var(--primary-white);
+        border-radius: .25em;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 4em;
+        width: 4em;
+        bottom: 0;
+        right: 0;
+        border-bottom: 5px solid var(--primary-white);
+        border-right: 5px solid var(--primary-white);
+        border-radius: .25em;
+    }
+}
+
+.name {
+    font-size: 5em;
+    font-weight: 400;
+}
+
+.profession {
+    font-size: 1.75em;
+    font-weight: 400;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 47%;
+        background-color: var(--primary-white);
+        bottom: 0;
+    }
+}
+
+.primary-nav {
+    margin-top: 3em;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.25em 1em;
+    background-color: var(--primary-white);
+    border-radius: .25em;
+}
+
+.nav-item {
+    
+    font-size: 1.25em;
+    font-weight: 500;
+    background-color: var(--primary-white);
+    color: var(--primary-purple);
+}
+
+@media (1300px < width < 1500px) {
+    
+    .name {
+        font-size: 5vw;
+    }
+
+    .profession {
+        font-size: 1.75vw;
+    }
+
+}
+
+@media (width < 1300px) {
+    
+    .name {
+        font-size: 3.5em;
+    }
+
+    .profession {
+        font-size: 1.5;
+
+        &::before {
+            width: 68%;
+        }
+    }
+
+}

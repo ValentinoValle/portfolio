@@ -1,0 +1,125 @@
+
+.navbar-wrapper {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    margin: 1em 2em;
+
+}
+
+.lang-and-menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo {
+    height: 6.25rem;
+    width: 6.25rem;
+
+    #v-logo {
+        fill: var(--primary-purple);
+        stroke: var(--primary-white);
+        stroke-width: 3;
+        transition: all .1s;
+    }
+
+    #v-logo-path {
+        fill: var(--primary-purple);
+        transition: all .1s;
+    }
+
+    #rectangle {
+        stroke: var(--primary-white);
+        stroke-width: 5;
+        fill: var(--primary-purple);
+        transition: all .1s;
+    }
+
+    &:hover {
+
+        #v-logo {
+            fill: var(--primary-white);
+            stroke: var(--primary-purple);
+            stroke-width: 0;
+            transition: all .1s;
+        }
+
+        #v-logo-path {
+            fill: var(--primary-white);
+            transition: all .1s;
+        }
+
+        #rectangle {
+            stroke: var(--primary-purple);
+            stroke-width: 0;
+            fill: var(--primary-white);
+            transition: all .1s;
+        }
+    }
+}
+
+.hmbg-menu {
+    height: 6.25rem;
+    width: 6.25rem;
+
+    #left-one, #left-two, #left-three,
+    #right-one, #right-two, #right-three {
+        transform-box: fill-box;
+        transform-origin: center;
+        transition: all .2s;
+        stroke: var(--primary-white);
+        stroke-width: 5;
+        fill: var(--primary-purple);
+    }
+    
+    #left-two, #right-two {
+        transition-delay: .1s;
+    }
+
+    #left-three, #right-three {
+        transition-delay: .2s;
+    }
+    
+    &:hover {
+        transition: all 2s;
+    
+        #left-one, #left-two, #left-three {
+            transform-box: fill-box;
+            transform-origin: center;
+            transform: rotate(180deg);
+            transition: all .2s;
+            stroke: none;
+            fill: var(--primary-white);
+        }
+    
+        #right-one, #right-two, #right-three {
+            transform-box: fill-box;
+            transform-origin: center;
+            transform: rotate(-180deg);
+            transition: all .2s;
+            stroke: none;
+            fill: var(--primary-white);
+        }
+        
+        #left-two, #right-two {
+            transition-delay: .1s;
+        }
+
+        #left-two {
+            transform: rotate(360deg);
+            transition: all .4s;
+        }
+        #right-two {
+            transform: rotate(-360deg);
+            transition: all .4s;
+        }
+
+        #left-three, #right-three {
+            transition-delay: .2s;
+        }
+    }
+}
