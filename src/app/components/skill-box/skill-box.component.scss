@@ -1,0 +1,64 @@
+
+.icon {
+    height: 40px;
+    width: 40px;
+    fill: var(--primary-white);
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .75em;
+    position: relative;
+    overflow: hidden;
+
+    padding: 2em 1em;
+    border: 2px solid var(--primary-white);
+    
+    transition: all .2s;
+
+    .svg-container > .icon, .svg-container > .icon > .icon {
+        transition: all .1s;
+    }
+
+    .skillName {
+        font-size: 1.125rem;
+        transition: all .2s;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--primary-white);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all .2s, transform-origin 0s;
+    }
+
+    &:hover {
+        box-shadow: 0 0 .5em var(--primary-white);
+
+        .svg-container > .icon, .svg-container > .icon > .icon {
+            fill: var(--primary-purple);
+            transition: all .1s;
+        }
+
+        .skillName {
+            color: var(--primary-purple);
+            font-weight: 500;
+            transition: all .2s;
+        }
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+

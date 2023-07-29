@@ -12,7 +12,33 @@
 }
 
 .router-wrapper {
+    padding: 1em 3em 2em 3em;
+    position: relative;
     width: 50em;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 4em;
+        width: 4em;
+        top: 0;
+        left: 0;
+        border-top: 5px solid var(--primary-white);
+        border-left: 5px solid var(--primary-white);
+        border-radius: .25em;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 4em;
+        width: 4em;
+        bottom: 0;
+        right: 0;
+        border-bottom: 5px solid var(--primary-white);
+        border-right: 5px solid var(--primary-white);
+        border-radius: .25em;
+    }
 }
 
 @media (width < 1300px) {
@@ -20,6 +46,8 @@
     .main-wrapper {
         flex-direction: column;
         gap: 2em;
+        padding-top: 7em;
+        padding-bottom: 5em;
     }
 
     .logo {

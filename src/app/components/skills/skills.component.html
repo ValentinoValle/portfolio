@@ -1,0 +1,8 @@
+<div class="skills-wrapper">
+    <h1 class="skills-tittle">Skills</h1>
+    <div class="skills">
+        <div class="skill" *ngFor="let skill of skills">
+            <app-skill-box [svg]="skill.svg" [skill]="skill.skillName"></app-skill-box>
+        </div>
+    </div>
+</div>
