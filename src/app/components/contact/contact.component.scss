@@ -1,0 +1,128 @@
+.contact-wrapper {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-tittle {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.mail-wrapper, .mail, .form-link-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.mail {
+    gap: 1.25em;
+    margin-top: 1em;
+
+    & > .mail-tag {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+}
+
+.form-link-wrapper {
+    margin-top: 1em;
+}
+
+.arrow-svg {
+    height: 32px;
+    width: 32px;
+}
+
+/* Link underline animations */
+
+.mail-wrapper, .form-link-wrapper {
+    position: relative;
+    gap: .125em;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--primary-white);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all .2s ease-in-out, transform-origin 0s;
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: all .2s ease-in-out, transform-origin 0s;
+    }
+}
+
+.form-link-first-wrapper {
+    display: flex;
+}
+ 
+/* LinkedIn icon styling */
+
+.linkedIn-link {
+    text-decoration: none;
+}
+
+.linkedIn {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    width: 155px;
+    height: 4em;
+    padding: .5em .75em .5em .45em;
+    transition: all .2s ease-in-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        height: 4em;
+        width: 41.3%;
+        border-radius: 100em;
+        background-color: var(--primary-white);
+        transition: all .2s ease-in-out;
+        transition-delay: .2s;
+    }
+
+    &:hover {
+
+        .linkedIn-tag {
+            opacity: 1;
+            transform: scale(1);
+            transition: all .2s ease-in-out;
+            transition-delay: .2s;
+        }
+    }
+
+    &:hover::before {
+        width: 100%;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.linkedIn-tag {
+    color: var(--primary-purple);
+    font-weight: 500;
+    transform: scale(0);
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.linkedIn-icon {
+    height: 100%;
+    width: 50px;
+    fill: var(--primary-purple);
+}

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +11,10 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillBoxComponent } from './components/skill-box/skill-box.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ProjectComponent } from './components/project/project.component';
 
 
 @NgModule({
@@ -21,12 +25,17 @@ import { SkillBoxComponent } from './components/skill-box/skill-box.component';
     NavbarComponent,
     ProjectsComponent,
     SkillsComponent,
-    SkillBoxComponent
+    SkillBoxComponent,
+    ContactComponent,
+    AboutComponent,
+    ContactFormComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

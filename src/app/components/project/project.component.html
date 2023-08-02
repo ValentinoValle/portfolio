@@ -1,0 +1,48 @@
+<div class="project-wrapper">
+    <div class="prev-and-desc">
+        <div class="prev-container">
+            <img class="preview" [src]="project.previewImg" alt="Preview">
+            <h1 class="project-name">{{ project.name }}</h1>
+            <div class="prev-inner-border">
+            </div>
+        </div>
+        <p>{{ project.description }}</p>
+    </div>
+    <div class="technologies-wrapper">
+        <div class="technologies-header">
+            <h3>Technologies</h3>
+            <svg class="chev-svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="svg-path" d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="technologies">
+            <p>{{ project.technologies }}</p>
+        </div>
+    </div>
+    <a class="link-wrapper" href="">
+        <div class="link">
+            <svg class="arrow-svg" fill="#fff" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g data-name="Layer 2">
+                    <g data-name="diagonal-arrow-right-up">
+                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/>
+                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                    </g>
+                </g>
+            </svg>
+            <span>See Website</span>
+        </div>
+    </a>
+    <a class="link-wrapper" href="">
+        <div class="link">
+            <svg class="arrow-svg" fill="#fff" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g data-name="Layer 2">
+                    <g data-name="diagonal-arrow-right-up">
+                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/>
+                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                    </g>
+                </g>
+            </svg>
+            <span>See Repository</span>
+        </div>
+    </a>
+</div>

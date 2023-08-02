@@ -1,0 +1,49 @@
+
+.about-wrapper {
+    overflow: hidden;
+}
+
+.about-tittle {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.see-resume-wrapper {
+    display: flex;
+}
+
+.see-resume-link {
+    display: flex;
+    align-items: center;
+    gap: .125em;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--primary-white);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all .2s ease-in-out, transform-origin 0s;
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: all .2s ease-in-out, transform-origin 0s;
+    }
+}
+
+.arrow-svg {
+    height: 32px;
+    width: 32px;
+}

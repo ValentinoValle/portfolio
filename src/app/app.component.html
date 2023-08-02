@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <main class="main-wrapper">
     <app-logo class="logo" logoHeight="100%" logoWidth="100%"></app-logo>
-    <div class="router-wrapper">
-        <router-outlet></router-outlet>
+    <div class="router-wrapper" [@routeAnimations]="o.isActivated ? o.activatedRoute : ''">
+        <router-outlet #o="outlet"></router-outlet>
     </div>
 </main>
