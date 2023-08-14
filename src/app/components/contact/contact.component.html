@@ -1,5 +1,10 @@
 <div class="contact-wrapper">
-    <h1 class="contact-tittle">Contact</h1>
+    <div class="tittle-wrapper">
+        <h1 class="contact-tittle">Contact</h1>
+        <a routerLink="">
+            <img class="back-arrow" src="./assets/icons/back-svgrepo-com.svg" alt="">
+        </a>
+    </div>
     <div class="mail">
         <span class="mail-tag">Mail:</span>
         <div class="mail-wrapper">
@@ -11,7 +16,7 @@
                     </g>
                 </g>
             </svg>
-            <a class="mail-link"><span>valentino123.valle@gmail.com</span></a>
+            <a href="mailto: valentino123.valle@gmail.com" class="mail-link"><span>valentino123.valle@gmail.com</span></a>
         </div>
     </div>
     <div class="form-link-first-wrapper">
@@ -39,7 +44,4 @@
             <span class="linkedIn-tag">LinkedIn</span>
         </div>
     </a>
-    <!-- <div [@routeAnimations]="o.isActivated ? o.activatedRoute : ''">
-        <router-outlet #o="outlet"></router-outlet>
-    </div> -->
 </div>

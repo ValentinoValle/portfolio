@@ -1,6 +1,18 @@
 <div class="skills-wrapper">
-    <h1 class="skills-tittle">Skills</h1>
-    <div class="skills">
+    <div class="tittle-wrapper">
+        <h1 class="skills-tittle">Skills</h1>
+        <a routerLink="">
+            <img class="back-arrow" src="./assets/icons/back-svgrepo-com.svg" alt="back">
+        </a>
+    </div>
+    <span>Click and drag or scroll to see all skills</span>
+    <div 
+    class="skills"
+    (mousedown)="onMouseDown($event, skillsDiv)"
+    (mouseup)="onMouseUp(skillsDiv)"
+    (mouseleave)="onMouseLeave(skillsDiv)"
+    (mousemove)="drag($event, skillsDiv)"
+    #skillsDiv>
         <div class="skill" *ngFor="let skill of skills">
             <app-skill-box [svg]="skill.svg" [skill]="skill.skillName"></app-skill-box>
         </div>

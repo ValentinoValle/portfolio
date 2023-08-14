@@ -16,7 +16,17 @@ export class ProjectComponent implements OnInit {
       name: 'Zeus Gym',
       description: 'Full demo website for a fake gym, with a built in functionality to build a custom workout routine. In order to build a custom routine, the user has the option to choose from thousands of exercises, that are fetched and searched for in a searchbar that has search filter functionality.',
       previewImg: './assets/projectPreviews/zeusGymPrev.png',
-      technologies: 'Angular, Typescript, Sass'
+      technologies: 'Angular, Typescript, Sass',
+      siteLink: 'https://valentinovalle.github.io/ZeusGymWebsite/',
+      repoLink: 'https://github.com/ValentinoValle/ZeusGymWebsite',
+    },
+    {
+      name: 'AppChat',
+      description: 'Simple chatting application. In this site you can register an account and chat with anyone that is also registered.',
+      previewImg: './assets/projectPreviews/appChatPrev.png',
+      technologies: 'React, Typescript, Sass, Firebase',
+      siteLink: 'https://main--warm-pavlova-5f13d6.netlify.app/login',
+      repoLink: 'https://github.com/ValentinoValle/AppChatWebsite'
     }
   ]
 
@@ -28,8 +38,8 @@ export class ProjectComponent implements OnInit {
         case 'zeusgym':
           this.project = this.projectsArr[0];
           break;
-        default:
-          this.project = this.projectsArr[0];
+        case 'appchat':
+          this.project = this.projectsArr[1];
           break;
       }
     });

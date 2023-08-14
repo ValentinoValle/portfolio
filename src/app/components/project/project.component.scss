@@ -184,3 +184,14 @@ a {
     height: 32px;
     width: 32px;
 }
+
+.back-link {
+    margin-top: .5em;
+    gap: .5em;
+    font-size: 1.25rem;
+
+    .back-arrow-svg {
+        height: 20px;
+        width: 20px;
+    }
+}

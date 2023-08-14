@@ -1,5 +1,10 @@
 <section class="contact-form-wrapper">
-    <h1 class="contact-form-tittle">Contact Form</h1>
+    <div class="tittle-wrapper">
+        <h1 class="contact-form-tittle">Contact Form</h1>
+        <a routerLink="/contact">
+            <img class="back-arrow" src="./assets/icons/back-svgrepo-com.svg" alt="back">
+        </a>
+    </div>
     <form class="contact-form" (ngSubmit)="submitForm()">
         <div class="field">
             <label for="name">Name</label>

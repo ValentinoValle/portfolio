@@ -1,19 +1,63 @@
 
 .skills-wrapper {
     overflow: hidden;
+
+    & > span {
+        display: inline-block;
+        margin-bottom: .5em;
+    }
 }
 
-.skills-tittle {
-    font-size: 3.5rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
+.tittle-wrapper {
+    display: flex;
+    align-items: center;
+
+    & > a {
+        margin-left: auto;
+        margin-right: 1em;
+    }
+
+    & > a > .back-arrow {
+        height: 40px;
+        width: 40px;
+    }
+
+    .skills-tittle {
+        font-size: 3.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
 }
+
 
 .skills {
+    cursor: grab;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    //grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1em;
+    padding-bottom: 1em;
+    
+    overflow-x: scroll;
+
+    /* Webkit browsers */
+
+    &::-webkit-scrollbar { height: 5px; }
+    &::-webkit-scrollbar-thumb { background-color: var(--primary-white); }
+    
+    /* Firefox */
+    
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-white) var(--primary-purple);
+}
+
+.skills-active {
+    cursor: grabbing;
+}
+
+.skill {
+    min-width: 164px;
+    min-height: 147px;
 }
 
 

@@ -8,11 +8,27 @@ a {
     overflow: hidden;
 }
 
-.projects-tittle {
-    font-size: 3.5rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
+.tittle-wrapper {
+    display: flex;
+    align-items: center;
+    
+    & > a {
+        margin-left: auto;
+        margin-right: 1em;
+    }
+
+    & > a > .back-arrow {
+        height: 40px;
+        width: 40px;
+    }
+
+    .projects-tittle {
+        font-size: 3.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
 }
+
 
 .projects {
     display: flex;
