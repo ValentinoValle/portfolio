@@ -27,7 +27,14 @@ export class ProjectComponent implements OnInit {
       technologies: 'React, Typescript, Sass, Firebase',
       siteLink: 'https://main--warm-pavlova-5f13d6.netlify.app/login',
       repoLink: 'https://github.com/ValentinoValle/AppChatWebsite'
-    }
+    },
+    {
+      name: 'Web Crawler',
+      description: 'This program allows you to see all the inner links of a website, printing them in the console.',
+      previewImg: './assets/projectPreviews/WebCrawlerPrev.png',
+      technologies: 'Javascript, Jest',
+      repoLink: 'https://github.com/ValentinoValle/WebCrawler'
+    },
   ]
 
   constructor(private route: ActivatedRoute) {  }
@@ -40,6 +47,9 @@ export class ProjectComponent implements OnInit {
           break;
         case 'appchat':
           this.project = this.projectsArr[1];
+          break;
+        case 'webcrawler':
+          this.project = this.projectsArr[2];
           break;
       }
     });

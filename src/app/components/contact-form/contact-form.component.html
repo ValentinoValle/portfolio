@@ -5,18 +5,18 @@
             <img class="back-arrow" src="./assets/icons/back-svgrepo-com.svg" alt="back">
         </a>
     </div>
-    <form class="contact-form" (ngSubmit)="submitForm()">
+    <form class="contact-form" [formGroup]="formData" (ngSubmit)="submitForm()">
         <div class="field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" [(ngModel)]="name" >
+            <input type="text" name="name" id="name" formControlName="from_name" >
         </div>
         <div class="field">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" [(ngModel)]="email">
+            <input type="email" name="email" id="email" formControlName="from_email">
         </div>
         <div class="field">
             <label for="message">Message</label>
-            <textarea name="message" id="message" [(ngModel)]="message"></textarea>
+            <textarea name="message" id="message" formControlName="message"></textarea>
         </div>
         <button class="submit-btn" type="submit">Submit</button>
     </form>

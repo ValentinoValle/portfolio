@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { HomeComponent } from './components/home/home.component';
@@ -15,7 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ProjectComponent } from './components/project/project.component';
-
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +31,16 @@ import { ProjectComponent } from './components/project/project.component';
     ContactComponent,
     AboutComponent,
     ContactFormComponent,
-    ProjectComponent
+    ProjectComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

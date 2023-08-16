@@ -142,3 +142,36 @@ a {
     width: 50px;
     fill: var(--primary-purple);
 }
+
+@media (width < 580px) {
+    .mail {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (width < 450px) {
+    .tittle-wrapper {
+        .contact-tittle {
+            font-size: 2.5rem;
+        }
+    }
+
+    .mail {
+        .mail-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (width < 370px) {
+    .tittle-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        & > a {
+            margin-left: 0;
+        }
+    }
+}

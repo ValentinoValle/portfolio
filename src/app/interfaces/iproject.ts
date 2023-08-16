@@ -3,6 +3,6 @@ export interface Project {
     description: string,
     previewImg: string,
     technologies: string,
-    siteLink: string,
+    siteLink?: string,
     repoLink: string,
 }

@@ -19,7 +19,7 @@
             <p>{{ project.technologies }}</p>
         </div>
     </div>
-    <a class="link-wrapper" [href]="project.siteLink" target="_blank">
+    <a *ngIf="project.siteLink" class="link-wrapper" [href]="project.siteLink" target="_blank">
         <div class="link">
             <svg class="arrow-svg" fill="#fff" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <g data-name="Layer 2">

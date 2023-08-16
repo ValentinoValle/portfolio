@@ -118,3 +118,25 @@ a {
         left: 100%;
     }
 }
+
+@media (width < 480px) {
+    .tittle-wrapper {
+
+        .projects-tittle {
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (width < 380px) {
+    .tittle-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+
+        & > a {
+            margin-left: 0;
+            margin-bottom: 1em;
+        }
+    }
+}

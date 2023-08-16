@@ -59,3 +59,9 @@
     }
 
 }
+
+@media (width < 500px) {
+    .router-wrapper {
+        width: 90%;
+    }
+}

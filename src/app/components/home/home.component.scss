@@ -4,7 +4,7 @@
 }
 
 .name {
-    font-size: 5em;
+    font-size: 5rem;
     font-weight: 400;
 }
 
@@ -43,7 +43,6 @@
     font-weight: 500;
     text-align: center;
     color: var(--primary-white);
-    padding: 1em;
     z-index: 1;
 
     &::before, &::after {
@@ -83,8 +82,11 @@
 }
 
 .nav-link {
+    height: 100%;
+    width: 100%;
     text-decoration: none;
     color: inherit;
+    padding: 1em;
 }
 
 @media (1300px < width < 1500px) {
@@ -100,17 +102,29 @@
 }
 
 @media (width < 1300px) {
-    
     .name {
-        font-size: 3.5em;
+        font-size: 3.5rem;
     }
 
     .profession {
         font-size: 1.5;
+    }
+}
 
-        &::before {
-            width: 68%;
-        }
+@media (max-width: 840px) {
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
     }
 
+    .nav-item > a {
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .name {
+        font-size: 2.5rem;
+    }
 }

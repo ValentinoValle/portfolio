@@ -89,3 +89,27 @@ label {
         transition: all .2s;
     }
 }
+
+@media (width < 740px) {
+    .tittle-wrapper {
+        .contact-form-tittle {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media (width < 560px) {
+    .tittle-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+
+        & > a {
+            margin-left: 0;
+        }
+    }
+
+    .field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

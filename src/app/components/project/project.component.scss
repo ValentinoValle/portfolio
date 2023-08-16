@@ -22,8 +22,6 @@ a {
     }
 }
 
-
-
 .prev-and-desc {
     position: relative;
     z-index: 1;
@@ -193,5 +191,26 @@ a {
     .back-arrow-svg {
         height: 20px;
         width: 20px;
+    }
+}
+
+
+@media (width < 590px) {
+    .prev-and-desc {
+        .project-name {
+            font-size: 2.5rem;
+        }
+    }
+
+    .technologies-wrapper > .technologies-header > h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (width < 390px) {
+    .prev-and-desc {
+        .project-name {
+            font-size: 2rem;
+        }
     }
 }
