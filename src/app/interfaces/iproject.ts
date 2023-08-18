@@ -1,6 +1,7 @@
 export interface Project {
     name: string,
-    description: string,
+    enDesc: string,
+    esDesc: string,
     previewImg: string,
     technologies: string,
     siteLink?: string,

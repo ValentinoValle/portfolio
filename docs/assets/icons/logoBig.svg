@@ -1,0 +1,20 @@
+<svg width="506" height="506" viewBox="0 0 506 506" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Desktop - 1">
+<rect width="500" height="500" transform="translate(3 3)" fill="#1E123C"/>
+<path id="oct-big" d="M3 356.901V147.681L147.068 3H359.638L503 147.681V356.901L359.638 503H147.068L3 356.901Z" stroke="white" stroke-width="5"/>
+<path id="oct-small" d="M72 328.516V177.46L176.017 73H329.493L433 177.46V328.516L329.493 434H176.017L72 328.516Z" stroke="white" stroke-width="5"/>
+<path id="rec-one" d="M3 147.68V251.096V356.9L72 328.52V177.46L3 147.68Z" fill="white"/>
+<path id="rec-two" d="M3 147.68L147.07 3L176.02 73L72 177.46L3 147.68Z" fill="white"/>
+<path id="rec-three" d="M359.64 3H147.07L176.02 73H329.49L359.64 3Z" fill="white"/>
+<path id="rec-four" d="M359.64 3L503 147.68L433 177.46L329.49 73L359.64 3Z" fill="white"/>
+<path id="rec-five" d="M503 356.9V147.68L433 177.46V328.52L503 356.9Z" fill="white"/>
+<path id="rec-six" d="M359.64 503L503 356.9L433 328.52L329.49 434L359.64 503Z" fill="white"/>
+<path id="rec-seven" d="M147.07 503H359.64L329.49 434H176.02L147.07 503Z" fill="white"/>
+<path id="rec-eight" d="M3 356.9L147.07 503L176.02 434L72 328.52L3 356.9Z" fill="white"/>
+<g id="v-logo">
+<path d="M253 358L188.5 114L253 236L323 114L253 358L303.5 236L353 114L323 358L303.5 236L278.5 390.5L253 358L228 390.5L203.5 236L188.5 358L153 114L203.5 236L253 358Z" fill="white"/>
+<path d="M253 358L188.5 114L253 236L323 114L253 358ZM253 358L303.5 236M253 358L278.5 390.5L303.5 236M253 358L203.5 236M253 358L228 390.5L203.5 236M303.5 236L353 114L323 358L303.5 236ZM203.5 236L153 114L188.5 358L203.5 236Z" stroke="#1E123C" stroke-width="5"/>
+</g>
+<path id="rectangle" d="M253 410.415L247.14 395.137L253 379.651L258.86 395.137L253 410.415Z" fill="white" stroke="white" stroke-width="4"/>
+</g>
+</svg>

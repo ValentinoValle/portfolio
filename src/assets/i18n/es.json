@@ -1,0 +1,62 @@
+{
+    "otherLang": "EN",
+    "home": {
+        "profession": "Desarrollador Web",
+        "nav": {
+            "home": "Inicio",
+            "projects": "Proyectos",
+            "skills": "Aptitudes",
+            "about": "Sobre Mí",
+            "contact": "Contacto"
+        }
+    },
+    "projects": {
+        "tittle": "Proyectos",
+        "project": {
+            "zeusGym": {
+                "shortDesc": "Sitio demo para un gimnasio falso, con un constructor de rutinas incluido",
+                "longDesc": "Sitio demo completo para un gimnasio falso, con una funcionalidad que permite al usuario construir una rutina propia. Para esto, el usuario tiene la opción de elegir entre miles de ejercicios, que puede buscar con una barra de búsqueda."
+            },
+            "appChat": {
+                "shortDesc": "Aplicación de chatting",
+                "longDesc": "Aplicación  simple para chatear. En este sitio, el usuario podrá registrar una cuenta y chatear con cualquier otro usuario que esté registrado."
+            },
+            "webCrawler": {
+                "shortDesc": "Programa para navegar todas las rutas de una página",
+                "longDesc": "Este programa te permite ver todos los links internos de un sitio web, imprimiendolos en la consola."
+            },
+            "technologies": "Tecnologías",
+            "seeWebsite": "Ver Sitio",
+            "seeRepository": "Ver Repositorio",
+            "back": "Volver a Proyectos"
+        }
+    },
+    "skills": {
+        "tittle": "Aptitudes",
+        "howToUse": "Haga click y arrastre el mouse para ver todas las aptitudes"
+    },
+    "about": {
+        "tittle": "Sobre Mí",
+        "desc": "Hola, mi nombre es Valentino Valle y soy un desarrollador web front-end y estudiante de ingeniería en informática. También me apasiona la música, videojuegos, e idiomas. Siempre estoy interesado en aprender nuevas tecnologías y conceptos relacionados con la programación.",
+        "seeResume": "Ver Currículum"
+    },
+    "contact": {
+        "tittle": "Contacto",
+        "mail": "Correo",
+        "form": "Formulario de Contacto",
+        "contactForm": {
+            "tittle": "Formulario",
+            "name": "Nombre",
+            "email": "Correo",
+            "message": "Mensaje",
+            "submit": "Enviar"
+        }
+    },
+    "menu": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "skills": "Aptitudes",
+        "about": "Sobre Mí",
+        "contact": "Contacto"
+    }
+}

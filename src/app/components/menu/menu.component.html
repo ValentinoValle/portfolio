@@ -1,7 +1,9 @@
-<div class="menu-wrapper">
-    <a class="menu-link" routerLink="">Home</a>
-    <a class="menu-link" routerLink="../projects">Projects</a>
-    <a class="menu-link" routerLink="../skills">Skills</a>
-    <a class="menu-link" routerLink="../about">About</a>
-    <a class="menu-link" routerLink="../contact">Contact</a>
-</div>
+<ng-container *transloco="let text">
+    <div class="menu-wrapper">
+        <a class="menu-link" routerLink="">{{ text('menu.home') }}</a>
+        <a class="menu-link" routerLink="../projects">{{ text('menu.projects') }}</a>
+        <a class="menu-link" routerLink="../skills">{{ text('menu.skills') }}</a>
+        <a class="menu-link" routerLink="../about">{{ text('menu.about') }}</a>
+        <a class="menu-link" routerLink="../contact">{{ text('menu.contact') }}</a>
+    </div>
+</ng-container>

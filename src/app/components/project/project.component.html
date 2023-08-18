@@ -1,56 +1,58 @@
-<div class="project-wrapper">
-    <div class="prev-and-desc">
-        <div class="prev-container">
-            <img class="preview" [src]="project.previewImg" alt="Preview">
-            <h1 class="project-name">{{ project.name }}</h1>
-            <div class="prev-inner-border">
+<ng-container *transloco="let text">
+    <div class="project-wrapper">
+        <div class="prev-and-desc">
+            <div class="prev-container">
+                <img class="preview" [src]="project.previewImg" alt="Preview">
+                <h1 class="project-name">{{ project.name }}</h1>
+                <div class="prev-inner-border">
+                </div>
+            </div>
+            <p>{{ translate.getActiveLang() == 'en' ? project.enDesc : project.esDesc }}</p>
+        </div>
+        <div class="technologies-wrapper">
+            <div class="technologies-header">
+                <h3>{{ text('projects.project.technologies') }}</h3>
+                <svg class="chev-svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="svg-path" d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="technologies">
+                <p>{{ project.technologies }}</p>
             </div>
         </div>
-        <p>{{ project.description }}</p>
-    </div>
-    <div class="technologies-wrapper">
-        <div class="technologies-header">
-            <h3>Technologies</h3>
-            <svg class="chev-svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="svg-path" d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </div>
-        <div class="technologies">
-            <p>{{ project.technologies }}</p>
-        </div>
-    </div>
-    <a *ngIf="project.siteLink" class="link-wrapper" [href]="project.siteLink" target="_blank">
-        <div class="link">
-            <svg class="arrow-svg" fill="#fff" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <g data-name="Layer 2">
-                    <g data-name="diagonal-arrow-right-up">
-                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/>
-                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+        <a *ngIf="project.siteLink" class="link-wrapper" [href]="project.siteLink" target="_blank">
+            <div class="link">
+                <svg class="arrow-svg" fill="#fff" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g data-name="Layer 2">
+                        <g data-name="diagonal-arrow-right-up">
+                            <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/>
+                            <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                        </g>
                     </g>
-                </g>
-            </svg>
-            <span>See Website</span>
-        </div>
-    </a>
-    <a class="link-wrapper" [href]="project.repoLink" target="_blank">
-        <div class="link">
-            <svg class="arrow-svg" fill="#fff" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <g data-name="Layer 2">
-                    <g data-name="diagonal-arrow-right-up">
-                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/>
-                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                </svg>
+                <span>{{ text('projects.project.seeWebsite') }}</span>
+            </div>
+        </a>
+        <a class="link-wrapper" [href]="project.repoLink" target="_blank">
+            <div class="link">
+                <svg class="arrow-svg" fill="#fff" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g data-name="Layer 2">
+                        <g data-name="diagonal-arrow-right-up">
+                            <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/>
+                            <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                        </g>
                     </g>
-                </g>
-            </svg>
-            <span>See Repository</span>
-        </div>
-    </a>
-    <a class="link-wrapper" routerLink="/projects">
-        <div class="link back-link">
-            <span>Back to projects</span>
-            <svg class="back-arrow-svg" fill="#fff" width="800px" height="800px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-                <path d="M222.927 580.115l301.354 328.512c24.354 28.708 20.825 71.724-7.883 96.078s-71.724 20.825-96.078-7.883L19.576 559.963a67.846 67.846 0 01-13.784-20.022 68.03 68.03 0 01-5.977-29.488l.001-.063a68.343 68.343 0 017.265-29.134 68.28 68.28 0 011.384-2.6 67.59 67.59 0 0110.102-13.687L429.966 21.113c25.592-27.611 68.721-29.247 96.331-3.656s29.247 68.721 3.656 96.331L224.088 443.784h730.46c37.647 0 68.166 30.519 68.166 68.166s-30.519 68.166-68.166 68.166H222.927z"/>
-            </svg>
-        </div>
-    </a>
-</div>
+                </svg>
+                <span>{{ text('projects.project.seeRepository') }}</span>
+            </div>
+        </a>
+        <a class="link-wrapper" routerLink="/projects">
+            <div class="link back-link">
+                <span>{{ text('projects.project.back') }}</span>
+                <svg class="back-arrow-svg" fill="#fff" width="800px" height="800px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M222.927 580.115l301.354 328.512c24.354 28.708 20.825 71.724-7.883 96.078s-71.724 20.825-96.078-7.883L19.576 559.963a67.846 67.846 0 01-13.784-20.022 68.03 68.03 0 01-5.977-29.488l.001-.063a68.343 68.343 0 017.265-29.134 68.28 68.28 0 011.384-2.6 67.59 67.59 0 0110.102-13.687L429.966 21.113c25.592-27.611 68.721-29.247 96.331-3.656s29.247 68.721 3.656 96.331L224.088 443.784h730.46c37.647 0 68.166 30.519 68.166 68.166s-30.519 68.166-68.166 68.166H222.927z"/>
+                </svg>
+            </div>
+        </a>
+    </div>
+</ng-container>

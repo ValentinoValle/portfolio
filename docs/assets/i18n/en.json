@@ -1,0 +1,62 @@
+{
+    "otherLang": "ES",
+    "home": {
+        "profession": "Web Developer",
+        "nav": {
+            "home": "Home",
+            "projects": "Projects",
+            "skills": "Skills",
+            "about": "About",
+            "contact": "Contact"
+        }
+    },
+    "projects": {
+        "tittle": "Projects",
+        "project": {
+            "zeusGym": {
+                "shortDesc": "Demo website for a fake gym with a routine builder functionality",
+                "longDesc": "Full demo website for a fake gym, with a built in functionality to build a custom workout routine. In order to build a custom routine, the user has the option to choose from thousands of exercises, that are fetched and searched for in a searchbar that has search filter functionality."
+            },
+            "appChat": {
+                "shortDesc": "Chatting Application",
+                "longDesc": "Simple chatting application. In this site you can register an account and chat with anyone that is also registered."
+            } ,
+            "webCrawler": {
+                "shortDesc": "Program to crawl a website",
+                "longDesc": "This program allows you to see all the inner links of a website, printing them in the console."
+            },
+            "technologies": "Technologies",
+            "seeWebsite": "See Website",
+            "seeRepository": "See Repository",
+            "back": "Back to projects"
+        }
+    },
+    "skills": {
+        "tittle": "Skills",
+        "howToUse": "Click and drag or scroll to see all skills"
+    },
+    "about": {
+        "tittle": "About",
+        "desc": "Hi, my name is Valentino Valle and I'm a front-end web developer and computer engineering student from Argentina. I'm also passionate about music, video games, and languages. I'm always interested in learning new technologies and concepts code related.",
+        "seeResume": "See Resume"
+    },
+    "contact": {
+        "tittle": "Contact",
+        "mail": "Mail",
+        "form": "Contact Form",
+        "contactForm": {
+            "tittle": "Contact Form",
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "submit": "Submit"
+        }
+    },
+    "menu": {
+        "home": "Home",
+        "projects": "Projects",
+        "skills": "Skills",
+        "about": "About",
+        "contact": "Contact"
+    }
+}

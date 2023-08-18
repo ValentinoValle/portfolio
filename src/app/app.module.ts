@@ -18,6 +18,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ProjectComponent } from './components/project/project.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { MenuComponent } from './components/menu/menu.component';
     AboutComponent,
     ContactFormComponent,
     ProjectComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +42,7 @@ import { MenuComponent } from './components/menu/menu.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    TranslocoRootModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

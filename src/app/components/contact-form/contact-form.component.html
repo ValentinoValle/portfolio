@@ -1,23 +1,25 @@
-<section class="contact-form-wrapper">
-    <div class="tittle-wrapper">
-        <h1 class="contact-form-tittle">Contact Form</h1>
-        <a routerLink="/contact">
-            <img class="back-arrow" src="./assets/icons/back-svgrepo-com.svg" alt="back">
-        </a>
-    </div>
-    <form class="contact-form" [formGroup]="formData" (ngSubmit)="submitForm()">
-        <div class="field">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" formControlName="from_name" >
+<ng-container *transloco="let text">
+    <section class="contact-form-wrapper">
+        <div class="tittle-wrapper">
+            <h1 class="contact-form-tittle">{{ text('contact.contactForm.tittle') }}</h1>
+            <a routerLink="/contact">
+                <img class="back-arrow" src="./assets/icons/back-svgrepo-com.svg" alt="back">
+            </a>
         </div>
-        <div class="field">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" formControlName="from_email">
-        </div>
-        <div class="field">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" formControlName="message"></textarea>
-        </div>
-        <button class="submit-btn" type="submit">Submit</button>
-    </form>
-</section>
+        <form class="contact-form" [formGroup]="formData" (ngSubmit)="submitForm()">
+            <div class="field">
+                <label for="name">{{ text('contact.contactForm.name') }}</label>
+                <input type="text" name="name" id="name" formControlName="from_name" >
+            </div>
+            <div class="field">
+                <label for="email">{{ text('contact.contactForm.email') }}</label>
+                <input type="email" name="email" id="email" formControlName="from_email">
+            </div>
+            <div class="field">
+                <label for="message">{{ text('contact.contactForm.message') }}</label>
+                <textarea name="message" id="message" formControlName="message"></textarea>
+            </div>
+            <button class="submit-btn" type="submit">{{ text('contact.contactForm.submit') }}</button>
+        </form>
+    </section>
+</ng-container>
