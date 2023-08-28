@@ -38,7 +38,8 @@
     "about": {
         "tittle": "About",
         "desc": "Hi, my name is Valentino Valle and I'm a front-end web developer and computer engineering student from Argentina. I'm also passionate about music, video games, and languages. I'm always interested in learning new technologies and concepts code related.",
-        "seeResume": "See Resume"
+        "seeResume": "See Resume",
+        "resumeLink": "https://drive.google.com/file/d/15R_Vk4aPwZMG-gyu0zo9cEl_RBKze15W/view?usp=sharing"
     },
     "contact": {
         "tittle": "Contact",

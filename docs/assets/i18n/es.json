@@ -38,7 +38,8 @@
     "about": {
         "tittle": "Sobre Mí",
         "desc": "Hola, mi nombre es Valentino Valle y soy un desarrollador web front-end y estudiante de ingeniería en informática. También me apasiona la música, videojuegos, e idiomas. Siempre estoy interesado en aprender nuevas tecnologías y conceptos relacionados con la programación.",
-        "seeResume": "Ver Currículum"
+        "seeResume": "Ver Currículum",
+        "resumeLink": "https://drive.google.com/file/d/1I9NexizrZX53GvgG2l3robDEFTzCFbm3/view?usp=sharing"
     },
     "contact": {
         "tittle": "Contacto",
